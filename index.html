@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div class="grid-container">
+      <div class="grid-item profile-item">
+
+        <div class="profile">
+          <img src="./images/image-jeremy.png" alt="user profile" class="avatar">
+          <p class="report">Report for</p>
+          <p class="username">Jeremy Robson</p>
+        </div>
+
+        <div class="button-group">
+          <button class="btn active" id="daily">Daily</button>
+          <button class="btn" id="weekly">Weekly</button>
+          <button class="btn" id="monthly">Monthly</button>
+        </div>
+
+      </div>
+
+      <div class="grid-item item-work">
+        <div class="content">
+          <div class="head">
+            <p class="title">Work</p>
+            <button class="elipsis-btn"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="body">
+            <p class="current-time">5hrs</p>
+            <div class="previous"><span class="time-identifier">Yesterday</span> <span class="time"> 7hrs</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item item-play">
+        <div class="content">
+          <div class="head">
+            <p class="title">Play</p>
+            <button class="elipsis-btn"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="body">
+            <p class="current-time">1hrs</p>
+            <div class="previous"><span class="time-identifier">Yesterday</span> <span class="time"> 2hrs</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item item-study">
+        <div class="content">
+          <div class="head">
+            <p class="title">Study</p>
+            <button class="elipsis-btn"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="body">
+            <p class="current-time">0hrs</p>
+            <div class="previous"><span class="time-identifier">Yesterday</span> <span class="time"> 1hrs</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item item-exercise">
+        <div class="content">
+          <div class="head">
+            <p class="title">Excercise</p>
+            <button class="elipsis-btn"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="body">
+            <p class="current-time">1hrs</p>
+            <div class="previous"><span class="time-identifier">Yesterday</span> <span class="time"> 1hrs</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item item-social">
+        <div class="content">
+          <div class="head">
+            <p class="title">Social</p>
+            <button class="elipsis-btn"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="body">
+            <p class="current-time">1hrs</p>
+            <div class="previous"><span class="time-identifier">Yesterday</span> <span class="time"> 3hrs</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item item-self-care">
+        <div class="content">
+          <div class="head">
+            <p class="title">Self Care</p>
+            <button class="elipsis-btn"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="body">
+            <p class="current-time">0hrs</p>
+            <div class="previous"><span class="time-identifier">Yesterday</span> <span class="time"> 1hrs</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Rizky Afriyandi</a>.
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

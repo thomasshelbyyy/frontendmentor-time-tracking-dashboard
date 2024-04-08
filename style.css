@@ -1,0 +1,213 @@
+:root {
+    /* Primary color */
+    --blue: hsl(246, 80%, 60%);
+    --light-red-work: hsl(15, 100%, 70%);
+    --soft-blue: hsl(195, 74%, 62%);
+    --light-red-study: hsl(348, 100%, 68%);
+    --lime-green: hsl(145, 58%, 55%);
+    --violet: hsl(264, 64%, 52%);
+    --soft-orange: hsl(43, 84%, 65%);
+
+    /* Neutral color */
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 38%, 48%);
+    --pale-blue: hsl(236, 100%, 87%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100vh;
+    font-family: "Rubik";
+    background-color: var(--very-dark-blue);
+
+}
+
+main {
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.grid-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-item {
+    grid-row: span 2;
+    background-color: var(--dark-blue);
+    border-radius: 16px;
+}
+
+
+.profile {
+    background-color: var(--blue);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.avatar {
+    width: 80px;
+    border-radius: 999px;
+    border: 2px solid white;
+}
+
+.report {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: var(--pale-blue);
+}
+
+.username {
+    font-size: 32px;
+    padding-bottom: 50px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    text-align: left;
+}
+
+.btn {
+    background-color: transparent;
+    color: var(--pale-blue);
+    border: none;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn.active {
+    color: white;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.item-work {
+    background: url("./images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: var(--light-red-work);
+}
+
+.item-play {
+    background: url("./images/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: var(--soft-blue);
+}
+
+.item-study {
+    background: url("./images/icon-study.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: var(--light-red-study);
+}
+
+.item-exercise {
+    background: url("./images/icon-exercise.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: var(--lime-green);
+}
+
+.item-social {
+    background: url("./images/icon-social.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: var(--violet);
+}
+
+.item-self-care {
+    background: url("./images/icon-self-care.svg");
+    background-color: var(--soft-orange);
+}
+
+.grid-item {
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: relative;
+    border-radius: 20px;
+}
+
+.content {
+    height: 80%;
+    position: absolute;
+    border-radius: 20px;
+    bottom: 0;
+    background-color: var(--dark-blue);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.content:hover {
+    background-color: var(--desaturated-blue);
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.elipsis-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.head p {
+    font-size: 20px;
+}
+
+.current-time {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.previous {
+    font-size: 16px;
+    color: var(--pale-blue);
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        height: auto;
+    }
+
+    .grid-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .button-group {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
